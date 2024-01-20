@@ -1,0 +1,54 @@
+body{
+    background: black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.deuxbarres{
+    position: relative;
+    width: 150px;
+    height: 250px;
+}
+
+.deuxbarres::before{
+    content: '';
+    background: red;
+    width: 50px;
+    height: 250px;
+    position: absolute;
+}
+
+.deuxbarres::after{
+    content: '';
+    background: red;
+    right: 0;
+    width: 50px;
+    height: 250px;
+    position: absolute;
+}
+
+.milieu{
+    background: red;
+    width: 50px;
+    height: 250px;
+    position: absolute;
+    left: 50px;
+    z-index: 2;
+    transform: skewX(22deg);
+    box-shadow: 0px 0px 20px 7px black;
+}
+
+.arrondi{
+    width: 200px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+    margin-top: -10px;
+    z-index: 3;
+}
